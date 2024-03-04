@@ -1,0 +1,68 @@
+.container {
+    width: 100vw;
+    height: 12vh;
+    /* border: 1px solid black; */
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hamburgerIcon{
+    visibility: hidden;
+}
+
+.navBackground {
+    background-color: black;
+}
+
+.container img {
+    height: 80%;
+    /* width: 40%; */
+    margin-left: 5rem;
+}
+
+.navList {
+    display: flex;
+    margin-right: 5rem;
+    /* background-color: skyblue; */
+}
+
+.unList {
+    display: flex;
+    color: white;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+.unList li {
+    margin: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+@media (max-width: 768px) {
+
+    .hamburgerIcon{
+        font-size: larger;
+        color: white;
+        visibility: visible;
+    }
+
+    .container{
+        height: 8vh;
+    }
+
+    .container img {
+        height: 50%;
+        margin-left: 10rem;
+    }
+
+    .navList {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        flex-wrap: nowrap;
+    }
+
+}
